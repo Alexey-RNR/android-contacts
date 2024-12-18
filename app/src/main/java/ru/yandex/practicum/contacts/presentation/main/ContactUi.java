@@ -62,4 +62,9 @@ public class ContactUi {
         result = 31 * result + types.hashCode();
         return result;
     }
+
+    @Override
+    public boolean theSameAs(ContactUi other) {
+        return this.hashCode() == other.hashCode();
+    }
 }

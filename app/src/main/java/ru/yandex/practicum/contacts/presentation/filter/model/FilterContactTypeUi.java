@@ -37,4 +37,9 @@ public class FilterContactTypeUi {
         result = 31 * result + (selected ? 1 : 0);
         return result;
     }
+
+    @Override
+    public boolean theSameAs(FilterContactTypeUi other) {
+        return this.getContactType() == other.getContactType();
+    }
 }

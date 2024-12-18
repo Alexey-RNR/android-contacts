@@ -39,4 +39,9 @@ public class SortTypeUI {
         result = 31 * result + (selected ? 1 : 0);
         return result;
     }
+
+    @Override
+    public boolean theSameAs(SortTypeUI other) {
+        return this.getSortType() == other.getSortType();
+    }
 }
